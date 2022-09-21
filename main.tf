@@ -57,7 +57,7 @@ module "ec2_instance" {
   ami                    = data.aws_ami.windows.id
   instance_type          = var.instance_type
   key_name               = "ec2"
-  vpc_security_group_ids = [module.security-group.sg-id]
+  vpc_security_group_ids = [module.security-group.security_group_id]
   subnet_id              = "subnet-06ea338d3feeb4a14"
 
   user_data = <<-EOT
