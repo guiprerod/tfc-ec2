@@ -17,3 +17,7 @@ variable "availability_zone" {
      type = string
      default = "eu-west-1a"
 }
+
+variable "TF_CLI_ARGS" {
+     type = string
+}
